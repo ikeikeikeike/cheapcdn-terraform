@@ -28,6 +28,11 @@ resource "digitalocean_loadbalancer" "object" {
     cookie_ttl_seconds = 600
   }
 
-  droplet_tag = "${digitalocean_tag.object.id}"
-  # droplet_ids = ["${digitalocean_droplet.object.id}"]
+  # droplet_tag = "${digitalocean_tag.object.id}"
+  droplet_ids = [
+    "${digitalocean_droplet.object1.id}",
+    "${digitalocean_droplet.object2.id}",
+    "${digitalocean_droplet.object3.id}",
+    "${digitalocean_droplet.object4.id}",
+  ]
 }

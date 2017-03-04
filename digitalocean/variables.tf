@@ -6,3 +6,6 @@ variable "ssh_keys" {
 
 variable "region" {}
 variable "domain_name" {}
+
+variable "volume_size" {}
+variable "droplet_size" {}
