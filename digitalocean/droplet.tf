@@ -8,6 +8,7 @@ resource "digitalocean_droplet" "object1" {
 
   ipv6  = true
   private_networking = true
+  backups = false
 
   volume_ids = ["${digitalocean_volume.object1.id}"]
 
@@ -26,6 +27,7 @@ resource "digitalocean_droplet" "object2" {
 
   ipv6  = true
   private_networking = true
+  backups = false
 
   volume_ids = ["${digitalocean_volume.object2.id}"]
 
@@ -44,6 +46,7 @@ resource "digitalocean_droplet" "object3" {
 
   ipv6  = true
   private_networking = true
+  backups = false
 
   volume_ids = ["${digitalocean_volume.object3.id}"]
 
@@ -62,6 +65,7 @@ resource "digitalocean_droplet" "object4" {
 
   ipv6  = true
   private_networking = true
+  backups = false
 
   volume_ids = ["${digitalocean_volume.object4.id}"]
 
