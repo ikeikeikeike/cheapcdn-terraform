@@ -10,7 +10,9 @@ resource "digitalocean_droplet" "object1" {
   private_networking = true
   backups = false
 
-  volume_ids = ["${digitalocean_volume.object1.id}"]
+  volume_ids = [
+    "${digitalocean_volume.object1.id}"
+  ]
 
   tags = [
     "${digitalocean_tag.object.id}",
@@ -29,47 +31,74 @@ resource "digitalocean_droplet" "object2" {
   private_networking = true
   backups = false
 
-  volume_ids = ["${digitalocean_volume.object2.id}"]
+  volume_ids = [
+    "${digitalocean_volume.object2.id}"
+  ]
 
   tags = [
     "${digitalocean_tag.object.id}",
   ]
 }
 
-resource "digitalocean_droplet" "object3" {
-  name = "object3"
-  image = "ubuntu-16-04-x64"
+# resource "digitalocean_droplet" "object3" {
+  # name = "object3"
+  # image = "ubuntu-16-04-x64"
 
-  size = "${var.droplet_size}"
-  region = "${var.region}"
-  ssh_keys = "${var.ssh_keys}"
+  # size = "${var.droplet_size}"
+  # region = "${var.region}"
+  # ssh_keys = "${var.ssh_keys}"
 
-  ipv6  = true
-  private_networking = true
-  backups = false
+  # ipv6  = true
+  # private_networking = true
+  # backups = false
 
-  volume_ids = ["${digitalocean_volume.object3.id}"]
+  # volume_ids = [
+    # "${digitalocean_volume.object3.id}"
+  # ]
 
-  tags = [
-    "${digitalocean_tag.object.id}",
-  ]
-}
+  # tags = [
+    # "${digitalocean_tag.object.id}",
+  # ]
+# }
 
-resource "digitalocean_droplet" "object4" {
-  name = "object4"
-  image = "ubuntu-16-04-x64"
+# resource "digitalocean_droplet" "object4" {
+  # name = "object4"
+  # image = "ubuntu-16-04-x64"
 
-  size = "${var.droplet_size}"
-  region = "${var.region}"
-  ssh_keys = "${var.ssh_keys}"
+  # size = "${var.droplet_size}"
+  # region = "${var.region}"
+  # ssh_keys = "${var.ssh_keys}"
 
-  ipv6  = true
-  private_networking = true
-  backups = false
+  # ipv6  = true
+  # private_networking = true
+  # backups = false
 
-  volume_ids = ["${digitalocean_volume.object4.id}"]
+  # volume_ids = [
+    # "${digitalocean_volume.object4.id}"
+  # ]
 
-  tags = [
-    "${digitalocean_tag.object.id}",
-  ]
-}
+  # tags = [
+    # "${digitalocean_tag.object.id}",
+  # ]
+# }
+
+# resource "digitalocean_droplet" "object5" {
+  # name = "object5"
+  # image = "ubuntu-16-04-x64"
+
+  # size = "${var.droplet_size}"
+  # region = "${var.region}"
+  # ssh_keys = "${var.ssh_keys}"
+
+  # ipv6  = true
+  # private_networking = true
+  # backups = false
+
+  # volume_ids = [
+    # "${digitalocean_volume.object5.id}"
+  # ]
+
+  # tags = [
+    # "${digitalocean_tag.object.id}",
+  # ]
+# }
