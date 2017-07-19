@@ -22,8 +22,56 @@ resource "digitalocean_volume" "object4" {
   size        = "${var.volume_size}"
 }
 
-# resource "digitalocean_volume" "object5" {
-  # region      = "${var.region}"
-  # name        = "object5"
-  # size        = "${var.volume_size}"
-# }
+resource "digitalocean_volume" "object5" {
+  region      = "${var.region}"
+  name        = "object5"
+  size        = 200
+}
+
+resource "digitalocean_volume" "object6" {
+  region      = "${var.region}"
+  name        = "object6"
+  size        = 300
+}
+
+resource "digitalocean_volume" "object7" {
+  region      = "${var.region}"
+  name        = "object7"
+  size        = 20
+}
+
+resource "digitalocean_volume" "object8" {
+  region      = "${var.region}"
+  name        = "object8"
+  size        = 20
+}
+
+resource "digitalocean_volume" "object9" {
+  region      = "${var.region}"
+  name        = "object9"
+  size        = 20
+}
+
+resource "digitalocean_volume" "object10" {
+  region      = "${var.region}"
+  name        = "object10"
+  size        = 20
+}
+
+resource "digitalocean_volume" "object11" {
+  region      = "${var.region}"
+  name        = "object11"
+  size        = 20
+}
+
+resource "digitalocean_volume" "object12" {
+  region      = "${var.region}"
+  name        = "object12"
+  size        = 20
+}
+
+resource "digitalocean_volume" "object13" {
+  region      = "${var.region}"
+  name        = "object13"
+  size        = 20
+}
