@@ -31,7 +31,7 @@ resource "digitalocean_volume" "object5" {
 resource "digitalocean_volume" "object6" {
   region      = "${var.region}"
   name        = "object6"
-  size        = 300
+  size        = "${var.volume_size}"
 }
 
 resource "digitalocean_volume" "object7" {

@@ -31,7 +31,8 @@ resource "digitalocean_loadbalancer" "object" {
   # droplet_tag = "${digitalocean_tag.object.id}"
   droplet_ids = [
     # "${digitalocean_droplet.object1.id}",
-    # "${digitalocean_droplet.object2.id}",
+
+    "${digitalocean_droplet.object2.id}",
     "${digitalocean_droplet.object3.id}",
     "${digitalocean_droplet.object4.id}",
     "${digitalocean_droplet.object5.id}",
