@@ -36,7 +36,7 @@ resource "digitalocean_loadbalancer" "object" {
     "${digitalocean_droplet.object3.id}",
     "${digitalocean_droplet.object4.id}",
     "${digitalocean_droplet.object5.id}",
-    # "${digitalocean_droplet.object6.id}",
+    "${digitalocean_droplet.object6.id}",
     "${digitalocean_droplet.object7.id}",
     "${digitalocean_droplet.object8.id}",
     "${digitalocean_droplet.object9.id}",
