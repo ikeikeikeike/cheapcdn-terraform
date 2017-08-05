@@ -32,11 +32,11 @@ resource "digitalocean_loadbalancer" "object" {
   droplet_ids = [
     # "${digitalocean_droplet.object1.id}",
 
-    "${digitalocean_droplet.object2.id}",
-    "${digitalocean_droplet.object3.id}",
-    "${digitalocean_droplet.object4.id}",
-    "${digitalocean_droplet.object5.id}",
-    "${digitalocean_droplet.object6.id}",
+    # "${digitalocean_droplet.object2.id}",
+    # "${digitalocean_droplet.object3.id}",
+    # "${digitalocean_droplet.object4.id}",
+    # "${digitalocean_droplet.object5.id}",
+    # "${digitalocean_droplet.object6.id}",
     "${digitalocean_droplet.object7.id}",
     "${digitalocean_droplet.object8.id}",
     "${digitalocean_droplet.object9.id}",
@@ -44,5 +44,8 @@ resource "digitalocean_loadbalancer" "object" {
     "${digitalocean_droplet.object11.id}",
     "${digitalocean_droplet.object12.id}",
     "${digitalocean_droplet.object13.id}",
+    "${digitalocean_droplet.object14.id}",
+    "${digitalocean_droplet.object15.id}",
+    "${digitalocean_droplet.object16.id}",
   ]
 }

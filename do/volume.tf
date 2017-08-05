@@ -75,3 +75,21 @@ resource "digitalocean_volume" "object13" {
   name        = "object13"
   size        = 20
 }
+
+resource "digitalocean_volume" "object14" {
+  region      = "${var.region}"
+  name        = "object14"
+  size        = 20
+}
+
+resource "digitalocean_volume" "object15" {
+  region      = "${var.region}"
+  name        = "object15"
+  size        = 20
+}
+
+resource "digitalocean_volume" "object16" {
+  region      = "${var.region}"
+  name        = "object16"
+  size        = 20
+}
