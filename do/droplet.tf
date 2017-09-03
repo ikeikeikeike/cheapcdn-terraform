@@ -350,3 +350,188 @@ resource "digitalocean_droplet" "object16" {
     "${digitalocean_tag.object.id}",
   ]
 }
+
+resource "digitalocean_droplet" "object17" {
+  name = "object17"
+  image = "ubuntu-16-04-x64"
+
+  size = "${var.droplet_size}"
+  region = "${var.region}"
+  ssh_keys = "${var.ssh_keys}"
+
+  ipv6  = true
+  private_networking = true
+  backups = false
+
+  volume_ids = [
+    "${digitalocean_volume.object17.id}"
+  ]
+
+  tags = [
+    "${digitalocean_tag.object.id}",
+  ]
+}
+
+resource "digitalocean_droplet" "object18" {
+  name = "object18"
+  image = "ubuntu-16-04-x64"
+
+  size = "${var.droplet_size}"
+  region = "${var.region}"
+  ssh_keys = "${var.ssh_keys}"
+
+  ipv6  = true
+  private_networking = true
+  backups = false
+
+  volume_ids = [
+    "${digitalocean_volume.object18.id}"
+  ]
+
+  tags = [
+    "${digitalocean_tag.object.id}",
+  ]
+}
+
+resource "digitalocean_droplet" "object19" {
+  name = "object19"
+  image = "ubuntu-16-04-x64"
+
+  size = "${var.droplet_size}"
+  region = "${var.region}"
+  ssh_keys = "${var.ssh_keys}"
+
+  ipv6  = true
+  private_networking = true
+  backups = false
+
+  volume_ids = [
+    "${digitalocean_volume.object19.id}"
+  ]
+
+  tags = [
+    "${digitalocean_tag.object.id}",
+  ]
+}
+
+resource "digitalocean_droplet" "object20" {
+  name = "object20"
+  image = "ubuntu-16-04-x64"
+
+  size = "${var.droplet_size}"
+  region = "${var.region}"
+  ssh_keys = "${var.ssh_keys}"
+
+  ipv6  = true
+  private_networking = true
+  backups = false
+
+  volume_ids = [
+    "${digitalocean_volume.object20.id}"
+  ]
+
+  tags = [
+    "${digitalocean_tag.object.id}",
+  ]
+}
+
+resource "digitalocean_droplet" "object21" {
+  name = "object21"
+  image = "ubuntu-16-04-x64"
+
+  size = "${var.droplet_size}"
+  region = "${var.region}"
+  ssh_keys = "${var.ssh_keys}"
+
+  ipv6  = true
+  private_networking = true
+  backups = false
+
+  volume_ids = [
+    "${digitalocean_volume.object21.id}"
+  ]
+
+  tags = [
+    "${digitalocean_tag.object.id}",
+  ]
+}
+resource "digitalocean_droplet" "object22" {
+  name = "object22"
+  image = "ubuntu-16-04-x64"
+
+  size = "${var.droplet_size}"
+  region = "${var.region}"
+  ssh_keys = "${var.ssh_keys}"
+
+  ipv6  = true
+  private_networking = true
+  backups = false
+
+  volume_ids = [
+    "${digitalocean_volume.object22.id}"
+  ]
+
+  tags = [
+    "${digitalocean_tag.object.id}",
+  ]
+}
+resource "digitalocean_droplet" "object23" {
+  name = "object23"
+  image = "ubuntu-16-04-x64"
+
+  size = "${var.droplet_size}"
+  region = "${var.region}"
+  ssh_keys = "${var.ssh_keys}"
+
+  ipv6  = true
+  private_networking = true
+  backups = false
+
+  volume_ids = [
+    "${digitalocean_volume.object23.id}"
+  ]
+
+  tags = [
+    "${digitalocean_tag.object.id}",
+  ]
+}
+resource "digitalocean_droplet" "object24" {
+  name = "object24"
+  image = "ubuntu-16-04-x64"
+
+  size = "${var.droplet_size}"
+  region = "${var.region}"
+  ssh_keys = "${var.ssh_keys}"
+
+  ipv6  = true
+  private_networking = true
+  backups = false
+
+  volume_ids = [
+    "${digitalocean_volume.object24.id}"
+  ]
+
+  tags = [
+    "${digitalocean_tag.object.id}",
+  ]
+}
+resource "digitalocean_droplet" "object25" {
+  name = "object25"
+  image = "ubuntu-16-04-x64"
+
+  size = "${var.droplet_size}"
+  region = "${var.region}"
+  ssh_keys = "${var.ssh_keys}"
+
+  ipv6  = true
+  private_networking = true
+  backups = false
+
+  volume_ids = [
+    "${digitalocean_volume.object25.id}"
+  ]
+
+  tags = [
+    "${digitalocean_tag.object.id}",
+  ]
+}
