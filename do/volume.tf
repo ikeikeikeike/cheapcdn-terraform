@@ -13,13 +13,13 @@ resource "digitalocean_volume" "object2" {
 resource "digitalocean_volume" "object3" {
   region      = "${var.region}"
   name        = "object3"
-  size        = "${var.volume_size}"
+  size        = 200
 }
 
 resource "digitalocean_volume" "object4" {
   region      = "${var.region}"
   name        = "object4"
-  size        = "${var.volume_size}"
+  size        = 200
 }
 
 resource "digitalocean_volume" "object5" {
@@ -31,7 +31,7 @@ resource "digitalocean_volume" "object5" {
 resource "digitalocean_volume" "object6" {
   region      = "${var.region}"
   name        = "object6"
-  size        = "${var.volume_size}"
+  size        = 200
 }
 
 resource "digitalocean_volume" "object7" {
@@ -143,3 +143,18 @@ resource "digitalocean_volume" "object25" {
   name        = "object25"
   size        = 10
 }
+resource "digitalocean_volume" "object26" {
+  region      = "${var.region}"
+  name        = "object26"
+  size        = 200
+}
+# resource "digitalocean_volume" "object27" {
+  # region      = "${var.region}"
+  # name        = "object27"
+  # size        = 200
+# }
+# resource "digitalocean_volume" "object28" {
+  # region      = "${var.region}"
+  # name        = "object28"
+  # size        = 200
+# }

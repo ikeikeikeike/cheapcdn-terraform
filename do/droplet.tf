@@ -535,3 +535,63 @@ resource "digitalocean_droplet" "object25" {
     "${digitalocean_tag.object.id}",
   ]
 }
+resource "digitalocean_droplet" "object26" {
+  name = "object26"
+  image = "ubuntu-16-04-x64"
+
+  size = "${var.droplet_size}"
+  region = "${var.region}"
+  ssh_keys = "${var.ssh_keys}"
+
+  ipv6  = true
+  private_networking = true
+  backups = false
+
+  volume_ids = [
+    "${digitalocean_volume.object26.id}"
+  ]
+
+  tags = [
+    "${digitalocean_tag.object.id}",
+  ]
+}
+# resource "digitalocean_droplet" "object27" {
+  # name = "object27"
+  # image = "ubuntu-16-04-x64"
+
+  # size = "${var.droplet_size}"
+  # region = "${var.region}"
+  # ssh_keys = "${var.ssh_keys}"
+
+  # ipv6  = true
+  # private_networking = true
+  # backups = false
+
+  # volume_ids = [
+    # "${digitalocean_volume.object27.id}"
+  # ]
+
+  # tags = [
+    # "${digitalocean_tag.object.id}",
+  # ]
+# }
+# resource "digitalocean_droplet" "object28" {
+  # name = "object28"
+  # image = "ubuntu-16-04-x64"
+
+  # size = "${var.droplet_size}"
+  # region = "${var.region}"
+  # ssh_keys = "${var.ssh_keys}"
+
+  # ipv6  = true
+  # private_networking = true
+  # backups = false
+
+  # volume_ids = [
+    # "${digitalocean_volume.object28.id}"
+  # ]
+
+  # tags = [
+    # "${digitalocean_tag.object.id}",
+  # ]
+# }
